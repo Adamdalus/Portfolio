@@ -1,5 +1,6 @@
 export interface Proyecto {
   nombre: string;
+  organizacion: string;
   resumen: string;
   imagen: string;
   imagenAlt: string;

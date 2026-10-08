@@ -35,6 +35,7 @@ export const proyectos: Proyecto[] = [
   // Tintorería previ
   {
     nombre: "Gestión integral para tintorería",
+    organizacion: "Proyecto personal",
     resumen:
       "Proyecto de fin de grado: una aplicación web completa que digitaliza la gestión diaria de una tintorería, desde la atención al cliente hasta el control interno.",
     imagen: tintoreria,
@@ -77,6 +78,7 @@ export const proyectos: Proyecto[] = [
   // Sote
   {
     nombre: "Sote",
+    organizacion: "Turku Vocational Institute",
     resumen:
       "Aplicación web completa para la gestión de prueba de un hospital, destinada al uso de alumnos de prácticas de Enfermería.",
     imagen: sote,

@@ -318,6 +318,10 @@ a:focus-visible {
   background: #292b27;
 }
 
+.proyecto__organizacion {
+  color:#4cf6f9
+}
+
 .proyecto__imagen {
   display: block;
   width: 100%;

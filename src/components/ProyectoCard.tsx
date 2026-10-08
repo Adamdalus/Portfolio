@@ -48,6 +48,7 @@ function ProyectoCard({ proyecto }: ProyectoCardProps) {
       </dialog>
       <div className="proyecto__contenido">
         <h3>{proyecto.nombre}</h3>
+        <p className="proyecto__organizacion">{proyecto.organizacion}</p>
         <p className="proyecto__resumen">{proyecto.resumen}</p>
         <div className="proyecto__funcionalidades">
           {proyecto.funcionalidades.map((funcionalidad) => (

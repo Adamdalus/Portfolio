@@ -12,6 +12,7 @@ function Header() {
           <a className="site-nav__link" href="#tecnologias">Tecnologías</a>
           <a className="site-nav__link" href="#proyectos">Proyectos</a>
           <a className="site-nav__link" href="#formacion">Formación</a>
+          <a className="site-nav__link" href="#contacto">Contacto</a>
         </nav>
       </div>
     </header>
