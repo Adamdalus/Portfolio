@@ -8,11 +8,10 @@ function Header() {
         </a>
 
         <nav className="site-nav" aria-label="Navegación principal">
-          <a className="site-nav__link" href="#inicio">Inicio</a>
           <a className="site-nav__link" href="#sobre-mi">Sobre mí</a>
-          <a className="site-nav__link site-nav__link--accent" href="#tecnologias">
-            Tecnologías <span aria-hidden="true">↓</span>
-          </a>
+          <a className="site-nav__link" href="#tecnologias">Tecnologías</a>
+          <a className="site-nav__link" href="#proyectos">Proyectos</a>
+          <a className="site-nav__link" href="#formacion">Formación</a>
         </nav>
       </div>
     </header>
