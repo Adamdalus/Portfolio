@@ -1,23 +1,46 @@
-import { useRef } from "react";
 import type { Experiencia } from "../types/experiencia";
 
 interface ExperienciaCardProps {
   experiencia: Experiencia;
 }
 
-function ExperienciaCard({ experiencia }: ExperienciaCardProps) {
-  const imagenAmpliadaRef = useRef<HTMLDialogElement>(null);
+function calcularDuracion(inicio: Date, final: Date) {
+  let meses =
+    (final.getUTCFullYear() - inicio.getUTCFullYear()) * 12 +
+    final.getUTCMonth() -
+    inicio.getUTCMonth();
+
+  if (final.getUTCDate() < inicio.getUTCDate()) {
+    meses -= 1;
+  }
+
+  const anos = Math.floor(meses / 12);
+  const mesesRestantes = meses % 12;
 
   return (
-    <article className="experiencia">
+    [
+      anos > 0 ? `${anos} ${anos === 1 ? "año" : "años"}` : null,
+      mesesRestantes > 0
+        ? `${mesesRestantes} ${mesesRestantes === 1 ? "mes" : "meses"}`
+        : null,
+    ]
+      .filter(Boolean)
+      .join(" y ") || "Menos de un mes"
+  );
+}
 
+function ExperienciaCard({ experiencia }: ExperienciaCardProps) {
+  return (
+    <article className="experiencia">
       <div className="experiencia__contenido">
-        <h3>{experiencia.nombreEmpresa}</h3>
+        <div className="experiencia__encabezado">
+          <h3>{experiencia.nombreEmpresa}</h3>
+          <p className="experiencia__lugar"> - {experiencia.lugar}</p>
+        </div>
+        <p className="experiencia__tiempo">
+          {calcularDuracion(experiencia.inicio, experiencia.final)}
+        </p>
         <p className="experiencia__organizacion">{experiencia.resumen}</p>
-        <p className="experiencia__inicio">{experiencia.inicio.getDate()}</p>
-        <p className="experiencia__final">{experiencia.final.getDate()}</p>
-        // SEGUIR AQUIIIIII
-        <p className="experiencia__tiempo">{experiencia.inicio.getDate() - experiencia.final.getDate()}</p>
         <div className="experiencia__funcionalidades">
           {experiencia.funcionalidades.map((funcionalidad) => (
             <section key={funcionalidad.titulo}>
@@ -30,7 +53,9 @@ function ExperienciaCard({ experiencia }: ExperienciaCardProps) {
           <h4>Tecnologías</h4>
           <ul className="experiencia__tecnologias">
             {experiencia.tecnologias.map((tecnologia) => (
-              <li key={tecnologia}>{tecnologia}</li>
+              <li className="experiencia__tecnologia" key={tecnologia}>
+                {tecnologia}
+              </li>
             ))}
           </ul>
         </div>
