@@ -2,7 +2,11 @@ import { certificaciones, idiomas } from "../data/perfil";
 
 function Perfil() {
   return (
-    <section className="perfil" aria-label="Idiomas y certificaciones">
+    <section
+      className="perfil"
+      id="perfil"
+      aria-label="Idiomas y certificaciones"
+    >
       <div className="perfil__contenido">
         <section className="perfil__bloque" id="idiomas" aria-labelledby="idiomas-titulo">
           <h2 id="idiomas-titulo">Idiomas</h2>

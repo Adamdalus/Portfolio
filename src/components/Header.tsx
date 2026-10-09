@@ -9,12 +9,10 @@ function Header() {
 
         <nav className="site-nav" aria-label="Navegación principal">
           <a className="site-nav__link" href="#sobre-mi">Sobre mí</a>
-          <a className="site-nav__link" href="#tecnologias">Tecnologías</a>
           <a className="site-nav__link" href="#proyectos">Proyectos</a>
           <a className="site-nav__link" href="#experiencia">Experiencia</a>
           <a className="site-nav__link" href="#formacion">Formación</a>
-          <a className="site-nav__link" href="#idiomas">Idiomas</a>
-          <a className="site-nav__link" href="#certificaciones">Certificaciones</a>
+          <a className="site-nav__link" href="#perfil">Idiomas y certificaciones</a>
           <a className="site-nav__link" href="#contacto">Contacto</a>
         </nav>
       </div>

@@ -7,12 +7,10 @@ function Footer() {
         </a>
         <nav className="site-footer__nav" aria-label="Navegación del pie de página">
           <a href="#sobre-mi">Sobre mí</a>
-          <a href="#tecnologias">Tecnologías</a>
           <a href="#proyectos">Proyectos</a>
           <a href="#experiencia">Experiencia</a>
           <a href="#formacion">Formación</a>
-          <a href="#idiomas">Idiomas</a>
-          <a href="#certificaciones">Certificaciones</a>
+          <a href="#perfil">Idiomas y certificaciones</a>
           <a href="#contacto">Contacto</a>
         </nav>
         <a className="site-footer__top" href="#inicio">

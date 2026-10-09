@@ -45,8 +45,8 @@ function Presentacion() {
             </ul>
           </div>
 
-          <a className="presentacion__boton" href="#tecnologias">
-            Conoce mi perfil <span aria-hidden="true">↓</span>
+          <a className="presentacion__boton" href="#contacto">
+            Contáctame <span aria-hidden="true">↓</span>
           </a>
         </div>
       </div>

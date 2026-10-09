@@ -10,6 +10,7 @@ export const certificaciones = [
 
 export const contacto = {
   email: "adambenito10@gmail.com",
-  telefono: "644719948",
+  telefono: "+34 644 71 99 48",
   ubicacion: "Madrid, España",
+  github: "https://github.com/Adamdalus",
 };
