@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header";
 import Presentacion from "./components/Presentacion";
 import Proyectos from "./components/Proyectos";
@@ -10,6 +11,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
+      <Analytics />
       <Header />
       <main>
         <Presentacion />
