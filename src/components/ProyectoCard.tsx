@@ -50,6 +50,16 @@ function ProyectoCard({ proyecto }: ProyectoCardProps) {
         <h3>{proyecto.nombre}</h3>
         <p className="proyecto__organizacion">{proyecto.organizacion}</p>
         <p className="proyecto__resumen">{proyecto.resumen}</p>
+        {proyecto.repositorio && (
+          <a
+            className="proyecto__repositorio"
+            href={proyecto.repositorio}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver repositorio <span aria-hidden="true">↗</span>
+          </a>
+        )}
         <div className="proyecto__funcionalidades">
           {proyecto.funcionalidades.map((funcionalidad) => (
             <section key={funcionalidad.titulo}>

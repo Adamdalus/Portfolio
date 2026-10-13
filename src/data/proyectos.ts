@@ -41,6 +41,7 @@ export const proyectos: Proyecto[] = [
     imagen: tintoreria,
     imagenAlt:
       "Página principal y sección de precios de la aplicación para tintorería",
+    repositorio: "https://github.com/davichi9/Trabajo-final-Previ",
     tipo: "Proyecto de fin de grado",
     funcionalidades: [
       {

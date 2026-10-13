@@ -4,6 +4,7 @@ export interface Proyecto {
   resumen: string;
   imagen: string;
   imagenAlt: string;
+  repositorio?: string;
   tipo: string;
   funcionalidades: {
     titulo: string;

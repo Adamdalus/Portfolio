@@ -12,6 +12,13 @@ function Footer() {
           <a href="#formacion">Formación</a>
           <a href="#perfil">Idiomas y certificaciones</a>
           <a href="#contacto">Contacto</a>
+          <a
+            href="https://github.com/Adamdalus/Portfolio"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Código del portfolio
+          </a>
         </nav>
         <a className="site-footer__top" href="#inicio">
           Volver arriba <span aria-hidden="true">↑</span>
