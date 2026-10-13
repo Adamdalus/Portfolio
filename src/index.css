@@ -203,6 +203,15 @@ a:hover {
   line-height: 1.85;
 }
 
+.presentacion__repositorio {
+  display: inline-flex;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .presentacion__tecnologias,
 .proyectos,
 .experiencias,

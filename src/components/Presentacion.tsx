@@ -27,6 +27,15 @@ function Presentacion() {
             técnico.
           </p>
 
+          <a
+            className="presentacion__repositorio"
+            href="https://github.com/Adamdalus/Portfolio"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver código del portfolio en GitHub <span aria-hidden="true">↗</span>
+          </a>
+
           <div className="presentacion__tecnologias" id="tecnologias">
             <h2>Tecnologías con las que trabajo</h2>
             <ul className="tecnologias-lista" aria-label="Tecnologías">
